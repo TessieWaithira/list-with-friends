@@ -8,3 +8,4 @@ class List(models.Model):
 	subject = models.CharField(max_length=255)
 	signoff = models.TextField(max_length=4000)
 	created_at = models.DateTimeField(auto_now_add=True)
+	image = models.FileField(null=True, blank=True)
